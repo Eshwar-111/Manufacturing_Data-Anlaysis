@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # -INPUT DATA AS A CSV FILE-
-data = pd.read_csv("production_data3.csv")
+data = pd.read_csv("Production_data.csv")
 
 # -DECLARING STANDARD VALUES-
 STANDARDS = {
@@ -297,3 +297,4 @@ with pd.ExcelWriter(report_file, engine="xlsxwriter") as writer:
     chart_sheet.insert_chart("B2", pie_chart, {"x_scale": 1.5, "y_scale": 1.5})
 
 print(f"\nExcel report generated successfully: {report_file}")
+
